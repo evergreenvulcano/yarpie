@@ -659,7 +659,6 @@ h1 {
 
 .archive-body {
   background: #eee7d8;
-  overflow-x: clip;
 }
 
 .archive-hero {
@@ -673,7 +672,6 @@ h1 {
 .archive-hero-grid,
 .archive-map {
   width: min(1180px, 100%);
-  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
@@ -781,7 +779,6 @@ h1 {
 .archive-copy,
 .draft-stack {
   width: min(1060px, 100%);
-  max-width: 1060px;
 }
 
 .source-note {
@@ -807,7 +804,7 @@ h1 {
   width: 100%;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
-  word-break: break-word;
+  word-break: normal;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: clamp(0.82rem, 1.08vw, 0.96rem);
   line-height: 1.62;
