@@ -10,6 +10,14 @@ This register exists so the web page can use the retrospective correctly.
 
 Entries are value additions to the Veckans Same format. They are not ranked, not popularity data, and not proof of final publication. The underlying source remains `official_candidate_not_published`.
 
+Current web split:
+
+- `veckans-same-profil.html` presents the latest registered recipient as the current profile.
+- `veckans-same.html` gathers earlier recipients as archive/value additions.
+- The profile may show public-facing orientation facts such as popularity band, family relation, and brief CV, but must not expose talskuld numbers, protected family mapping, or source-copy from Drive.
+
+Current profile: `Dösamen`.
+
 ## Import Table
 
 | Issue | Recipient | Web value addition | Public handling |
@@ -23,7 +31,7 @@ Entries are value additions to the Veckans Same format. They are not ranked, not
 | 7 | Fjärrsamen | Periphery that reveals the centre measured distance from the wrong home. | Consent-bound; keep explicit. |
 | 8 | Trålsamen | Missing presence; the discipline of not filling what waits. | Missing/not declared dead; no closure. |
 | 9 | Arkivsamen | Editing as care for what is neither gone nor public yet. | No archive exposure. |
-| 10 | Dösamen | The proof that talskuld must actually be worked down. | Name is not death status. |
+| 10 | Dösamen | The proof that talskuld must actually be worked down. | Current profile; name is not death status. |
 
 ## Omitted By Rule
 
