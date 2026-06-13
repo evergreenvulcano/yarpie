@@ -1,50 +1,60 @@
 <!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radio · Yarpie</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html">Yarpie<small>Det Djupsamiska Näringslivet</small></a>
-      <ul class="nav-list" aria-label="Huvudnavigation">
-          <li><a href="yarpie.html" data-page="yarpie.html">Yarpie</a></li>
-          <li><a href="det-djupsamiska-naringslivet.html" data-page="det-djupsamiska-naringslivet.html">Näringslivet</a></li>
-          <li><a href="storbastutinget.html" data-page="storbastutinget.html">Storbastutinget</a></li>
-          <li><a href="framtidsplaner-2040.html" data-page="framtidsplaner-2040.html">2040</a></li>
-          <li><a href="radio.html" data-page="radio.html">Radio</a></li>
-          <li><a href="besoksfonster.html" data-page="besoksfonster.html">Besök</a></li>
-        </ul>
-    </div>
-  </header>
-  <div class="simple-hero">
-    <div class="container">
-      <p class="eyebrow">Intern prototyp · ej extern cirkulation</p>
-      <h1>Radio</h1>
-    </div>
-  </div>
-  <main id="main-content">
-    <div class="container">
-      
-<section>
-  <p>Radiofönstret samlar programlägen, återutsändningstider och status för radioskugga.</p>
-  <ul class="list-clean">
-    <li>Morgonpass: verifierad.</li>
-    <li>Kvällspass: under värme.</li>
-  </ul>
-</section>
-
-    </div>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      Yarpie prototyp · <span data-year></span> · Materialet är fiktion/internt arbetsunderlag.
-    </div>
-  </footer>
-  <script src="assets/js/site.js" defer></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ruinradio och signaler | Yarpie</title>
+    <meta name="description" content="Ruinradio som lyssningsfönster utan transkription och utan råläckage." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehåll</a>
+    <header class="site-header is-scrolled" data-header>
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span><strong>Yarpie</strong><small>radio</small></span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Meny</button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="yarpie.html">Yarpie</a>
+        <a href="det-djupsamiska-naringslivet.html">Näringslivet</a>
+        <a href="storbastutinget.html">Storbastutinget</a>
+        <a href="framtidsplaner-2040.html">2040</a>
+        <a href="radio.html" aria-current="page">Radio</a>
+        <a href="besoksfonster.html">Besök</a>
+      </nav>
+    </header>
+    <main id="main" class="subpage">
+      <section class="page-hero">
+        <p class="eyebrow">Ruinradio och signaler</p>
+        <h1>Lyssna inte än. Se vad som sänder.</h1>
+        <p>
+          Radioytan ska bära ljudlager, signalnotiser och avsnittsfrön utan att transkribera skyddat material eller
+          göra Strålsamen till klickbete.
+        </p>
+        <span class="status-pill">under värme</span>
+      </section>
+      <figure class="visual-band">
+        <img src="assets/images/kosmiska-kvadraten-radioskugga-v0.png" alt="En tyst snötäckt kvadrat i mörk skog, där signalen stannar vid gränsen." />
+        <figcaption>Radioskuggan som produktivt avbrott: signalen når kanten, men inte mitten.</figcaption>
+      </figure>
+      <section class="section">
+        <div class="section-inner split">
+          <div class="section-copy">
+            <p class="eyebrow">Lyssningsfönster</p>
+            <h2>Ruinradio är inte ett poddnätverk ännu.</h2>
+            <p>
+              Sidan ska visa att signaler finns, att vissa kan kommenteras och att råljud inte publiceras utan separat
+              beslut. Strålsamen behandlas som riskmotor, Spräck som friktion och Flempo som passagefigur.
+            </p>
+          </div>
+          <div class="signal-panel">
+            <div class="signal-line"><span>Saknas</span><strong>3 signalnotiser</strong></div>
+            <div class="signal-line"><span>Saknas</span><strong>3 avsnittsbeskrivningar</strong></div>
+            <div class="signal-line"><span>Spärr</span><strong>ingen transkription</strong></div>
+            <div class="signal-line"><span>Risk</span><strong>klickbete</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><strong>Yarpie</strong><a href="index.html">Till startsidan</a></div></footer>
+    <script src="assets/js/site.js"></script>
+  </body>
 </html>

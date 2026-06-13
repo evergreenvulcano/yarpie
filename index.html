@@ -1,69 +1,220 @@
 <!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yarpie · Offentligt portalfönster</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html">Yarpie<small>Det Djupsamiska Näringslivet</small></a>
-      <ul class="nav-list" aria-label="Huvudnavigation">
-          <li><a href="yarpie.html" data-page="yarpie.html">Yarpie</a></li>
-          <li><a href="det-djupsamiska-naringslivet.html" data-page="det-djupsamiska-naringslivet.html">Näringslivet</a></li>
-          <li><a href="storbastutinget.html" data-page="storbastutinget.html">Storbastutinget</a></li>
-          <li><a href="framtidsplaner-2040.html" data-page="framtidsplaner-2040.html">2040</a></li>
-          <li><a href="radio.html" data-page="radio.html">Radio</a></li>
-          <li><a href="besoksfonster.html" data-page="besoksfonster.html">Besök</a></li>
-        </ul>
-    </div>
-  </header>
-  <section class="hero" aria-label="Portalvy">
-    <div class="container">
-      <p class="eyebrow">Offentligt fönster · kontrollerad publicering</p>
-      <h1>Yarpie</h1>
-      <p>En institutionell portal för samordnat läge, verksamhetsöversikt och prövad offentlig kommunikation.</p>
-    </div>
-  </section>
-  <main id="main-content">
-    <div class="container">
-      <section aria-labelledby="oversikt">
-        <h2 id="oversikt">Portalöversikt</h2>
-        <div class="grid">
-          <article class="card"><h3><a href="yarpie.html">Yarpie</a></h3><p>Syfte, avgränsning och portalens roll.</p></article>
-          <article class="card"><h3><a href="det-djupsamiska-naringslivet.html">Det Djupsamiska Näringslivet</a></h3><p>Samlad verksamhetsram med försiktig offentlig nivå.</p></article>
-          <article class="card"><h3><a href="storbastutinget.html">Storbastutinget</a></h3><p>Protokollnära struktur och rådande processfönster.</p></article>
-          <article class="card"><h3><a href="framtidsplaner-2040.html">Framtidsplaner 2040</a></h3><p>Scenarier, tröskelvärden och styrningsbehov.</p></article>
-          <article class="card"><h3><a href="radio.html">Radio</a></h3><p>Programöversikt och radioskugga/återutsändning.</p></article>
-          <article class="card"><h3><a href="besoksfonster.html">Besöksfönster</a></h3><p>Bokningsläge och reglerad närvaro.</p></article>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yarpie | Det Djupsamiska Näringslivets webbfönster</title>
+    <meta
+      name="description"
+      content="Yarpie är webbfönstret där Det Djupsamiska Näringslivet visar sig för det offentliga Sverige utan att upplösa sig i offentligheten."
+    />
+    <meta property="og:title" content="Yarpie | Det Djupsamiska Näringslivets webbfönster" />
+    <meta
+      property="og:description"
+      content="En statisk portalprototyp för Lompolo-ättens djupnäringsliv, framtidsberedning och offentliga webbnärvaro."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/yarpie-portal-hero.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Yarpie startsida">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <strong>Yarpie</strong>
+          <small>yarpie.verboten.se</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        Meny
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="yarpie.html">Yarpie</a>
+        <a href="det-djupsamiska-naringslivet.html">Näringslivet</a>
+        <a href="storbastutinget.html">Storbastutinget</a>
+        <a href="framtidsplaner-2040.html">2040</a>
+        <a href="radio.html">Radio</a>
+        <a href="besoksfonster.html">Besök</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/images/yarpie-portal-hero.png"
+          alt="Ett varmt webbfönster över vintermark och mörk skog, med diskreta fiberlinjer under ytan."
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Det Djupsamiska Näringslivets webbfönster</p>
+          <h1 id="hero-title">Det offentliga Sverige känner ännu inte till det djupsamiska näringslivet.</h1>
+          <p class="hero-lede">Det betyder inte att Sverige står utanför dess verkningar.</p>
+          <div class="hero-actions" aria-label="Primära vägar">
+            <a class="button primary" href="yarpie.html">Gå in genom Yarpie</a>
+            <a class="button secondary" href="det-djupsamiska-naringslivet.html">Förstå systemet</a>
+          </div>
+        </div>
+        <aside class="hero-status" aria-label="Portalstatus">
+          <span>Portalstatus</span>
+          <strong>under värme</strong>
+        </aside>
+      </section>
+
+      <section class="intro-band" aria-labelledby="portal-title">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="eyebrow">Portal, inte arkiv</p>
+            <h2 id="portal-title">Yarpie visar fönstret, inte hela huset.</h2>
+          </div>
+          <p>
+            Den här första statiska vågen gör Yarpie till ett rumssystem: öppna fönster, sidor under värme,
+            beslutsväntande signaler och stängda partier. LOMPOLO-CORE ligger under ytan som intern motor.
+          </p>
         </div>
       </section>
 
-      <section aria-labelledby="under-varme">
-        <h2 id="under-varme">Under värme</h2>
-        <p class="notice">Arbetsmaterial i intern process. Innehåll under verifiering och governance-granskning.</p>
-        <div class="grid">
-          <article class="card"><h3><a href="fraga-under-varme.html">Fråga under värme</a></h3><p>Frågestyrd insamling under handläggning.</p></article>
-          <article class="card"><h3><a href="radioskuggan.html">Radioskuggan</a></h3><p>Skuggzoner och tillfälliga avbrottslägen.</p></article>
-          <article class="card"><h3><a href="korna.html">Korna</a></h3><p>Systemlager för korrespondenser och signalbindning.</p></article>
-          <article class="card"><h3><a href="kosmiska-kvadraten.html">Kosmiska Kvadraten</a></h3><p>Modell för intern koordinatprövning.</p></article>
-          <article class="card"><h3><a href="scrolls.html">Scrolls</a></h3><p>Dokumentstubbar för senare publiceringspass.</p></article>
-          <article class="card"><h3><a href="fjarde-generationen.html">Fjärde generationen</a></h3><p>Bärighet och succession som systemskikt.</p></article>
-          <article class="card"><h3><a href="riskmotorn.html">Riskmotorn</a></h3><p>Varningsnivåer och autogenereringsrisk.</p></article>
-          <article class="card"><h3><a href="world-events.html">World-events</a></h3><p>Omvärldsläge i begränsat publikformat.</p></article>
-          <article class="card"><h3><a href="ordlista.html">Ordlista</a></h3><p>Begrepp med intern prioritering och status.</p></article>
+      <section class="section" aria-labelledby="rooms-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Första vågen</p>
+            <h2 id="rooms-title">Sex rum som kan bära fler än sex sidor.</h2>
+          </div>
+          <div class="room-grid">
+            <a class="room-card" href="yarpie.html">
+              <span>öppet fönster</span>
+              <strong>Yarpie</strong>
+              <p>Portalen, Orrengonjo Jarpie och besökskänslan.</p>
+            </a>
+            <a class="room-card" href="det-djupsamiska-naringslivet.html">
+              <span>öppet fönster</span>
+              <strong>Det Djupsamiska Näringslivet</strong>
+              <p>Systemet under Sverige, utan att översättas till vanlig marknad.</p>
+            </a>
+            <a class="room-card" href="storbastutinget.html">
+              <span>under värme</span>
+              <strong>Storbastutinget</strong>
+              <p>Beslut, rådslag, protokoll och frågor som ännu inte får svar.</p>
+            </a>
+            <a class="room-card" href="framtidsplaner-2040.html">
+              <span>under värme</span>
+              <strong>Framtidsplaner 2040</strong>
+              <p>Fyrcykelsplan, succession och långtid.</p>
+            </a>
+            <a class="room-card" href="radio.html">
+              <span>under värme</span>
+              <strong>Ruinradio och signaler</strong>
+              <p>Lyssningsfönster utan transkription och utan klickbete.</p>
+            </a>
+            <a class="room-card" href="besoksfonster.html">
+              <span>öppet fönster</span>
+              <strong>Besöksfönster</strong>
+              <p>Presentation, kontrollerat besök, forskningsfråga eller fel ärende.</p>
+            </a>
+          </div>
         </div>
       </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      Yarpie prototyp · <span data-year></span> · Materialet är fiktion/internt arbetsunderlag.
-    </div>
-  </footer>
-  <script src="assets/js/site.js" defer></script>
-</body>
+
+      <section class="section deep" aria-labelledby="heat-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Under värme</p>
+            <h2 id="heat-title">Sidor som syns som löften, inte som färdiga svar.</h2>
+            <p>
+              De här rummen ska finnas i portalens horisont redan nu, men de behöver content, beslut och skydd innan
+              de blir egna sidor.
+            </p>
+          </div>
+          <div class="stub-grid" aria-label="Sidor under värme">
+            <a href="fraga-under-varme.html">Fråga under värme</a>
+            <a href="radioskuggan.html">Radioskuggan</a>
+            <a href="korna.html">Korna</a>
+            <a href="kosmiska-kvadraten.html">Kosmiska Kvadraten</a>
+            <a href="scrolls.html">Scrolls</a>
+            <a href="fjarde-generationen.html">Fjärde generationen</a>
+            <a href="riskmotorn.html">Riskmotorn</a>
+            <a href="world-events.html">World-events</a>
+            <a href="ordlista.html">Ordlista</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section paper" aria-labelledby="signal-title">
+        <div class="section-inner ting-layout">
+          <div>
+            <p class="eyebrow">Signalremsa</p>
+            <h2 id="signal-title">Sajten behöver levande signaler, men inte råläckage.</h2>
+            <p>
+              Första iterationen visar signalernas funktion. Nästa iteration behöver faktiska signalnotiser,
+              eventkort, protokollfragment och statusrader beställda i content-backloggen.
+            </p>
+          </div>
+          <div class="signal-panel" aria-label="Signalläge">
+            <div class="signal-line">
+              <span>Senaste signal</span>
+              <strong>ej publicerad</strong>
+            </div>
+            <div class="signal-line">
+              <span>Radioskuggan</span>
+              <strong>väntar på beslut</strong>
+            </div>
+            <div class="signal-line">
+              <span>Fråga under beredning</span>
+              <strong>vilken publik först?</strong>
+            </div>
+            <div class="signal-line">
+              <span>Riskmotor</span>
+              <strong>kommenterad, inte fri</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section decision-section" aria-labelledby="decision-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Human-in-the-loop</p>
+            <h2 id="decision-title">Beslut som webben ska locka fram.</h2>
+          </div>
+          <div class="decision-grid">
+            <article>
+              <span>01</span>
+              <h3>Institution eller plats först?</h3>
+              <p>Yarpie behöver välja om portalen talar som institution, rum eller båda samtidigt.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Hur mycket ekonomi får synas?</h3>
+              <p>Det djupsamiska näringslivet måste bli begripligt utan att bli corporate governance.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Vilka signaler kan publiceras?</h3>
+              <p>Radio och riskmotor behöver kommenterade former, inte rå exponering.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Vad får besökaren begära?</h3>
+              <p>Besöksfönstret måste skilja presentation, sökande, forskning och fel ärende.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Yarpie</strong>
+          <p>Statisk webbprototyp. Inte deployad. Inte slutgiltig publicering.</p>
+        </div>
+        <a href="#top">Till toppen</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
+  </body>
 </html>

@@ -1,52 +1,59 @@
 <!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yarpie · Yarpie</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html">Yarpie<small>Det Djupsamiska Näringslivet</small></a>
-      <ul class="nav-list" aria-label="Huvudnavigation">
-          <li><a href="yarpie.html" data-page="yarpie.html">Yarpie</a></li>
-          <li><a href="det-djupsamiska-naringslivet.html" data-page="det-djupsamiska-naringslivet.html">Näringslivet</a></li>
-          <li><a href="storbastutinget.html" data-page="storbastutinget.html">Storbastutinget</a></li>
-          <li><a href="framtidsplaner-2040.html" data-page="framtidsplaner-2040.html">2040</a></li>
-          <li><a href="radio.html" data-page="radio.html">Radio</a></li>
-          <li><a href="besoksfonster.html" data-page="besoksfonster.html">Besök</a></li>
-        </ul>
-    </div>
-  </header>
-  <div class="simple-hero">
-    <div class="container">
-      <p class="eyebrow">Intern prototyp · ej extern cirkulation</p>
-      <h1>Yarpie</h1>
-    </div>
-  </div>
-  <main id="main-content">
-    <div class="container">
-      
-<section>
-  <p>Yarpie är ett kontrollerat offentligt portalfönster. Det är inte ett fullständigt arkiv och inte en full exponering av interna system.</p>
-  <p>LOMPOLO-CORE hanteras internt; denna yta visar endast granskad och avgränsad information.</p>
-  <div class="status-row" aria-label="statusetiketter">
-    <span class="status">funktionsmärkt</span>
-    <span class="status">ej för extern cirkulation</span>
-    <span class="status">requires_governance_review</span>
-  </div>
-</section>
-
-    </div>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      Yarpie prototyp · <span data-year></span> · Materialet är fiktion/internt arbetsunderlag.
-    </div>
-  </footer>
-  <script src="assets/js/site.js" defer></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yarpie | Portalen</title>
+    <meta name="description" content="Yarpie som kontrollerat webbfönster och digital ren-skrivning av Orrengonjo Jarpie." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehåll</a>
+    <header class="site-header is-scrolled" data-header>
+      <a class="brand" href="index.html" aria-label="Yarpie startsida">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span><strong>Yarpie</strong><small>öppet fönster</small></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Meny</button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="yarpie.html" aria-current="page">Yarpie</a>
+        <a href="det-djupsamiska-naringslivet.html">Näringslivet</a>
+        <a href="storbastutinget.html">Storbastutinget</a>
+        <a href="framtidsplaner-2040.html">2040</a>
+        <a href="radio.html">Radio</a>
+        <a href="besoksfonster.html">Besök</a>
+      </nav>
+    </header>
+    <main id="main" class="subpage">
+      <section class="page-hero" aria-labelledby="page-title">
+        <p class="eyebrow">Portalen / Orrengonjo Jarpie</p>
+        <h1 id="page-title">Yarpie är ett kontrollerat fönster, inte hela huset.</h1>
+        <p>
+          Yarpie är den digitala ren-skrivningen av Orrengonjo Jarpie: ett tvärgenerationskloster, en bolagsportal,
+          ett granskningsrum och en framtidsmyndighet i samma webbform.
+        </p>
+        <span class="status-pill">öppet fönster</span>
+      </section>
+      <section class="section">
+        <div class="section-inner split">
+          <div class="section-copy">
+            <p class="eyebrow">Besöksfunktion</p>
+            <h2>Besökaren ska känna att portalen ser frågan innan den besvarar den.</h2>
+            <p>
+              Den här sidan ska förklara varför Yarpie inte är retreat, PR-yta eller lore-wiki. Den är ingången där
+              offentliga institutioner, sökare och framtidspersoner förstår att vissa rum är öppna och andra stängda.
+            </p>
+          </div>
+          <div class="signal-panel">
+            <div class="signal-line"><span>Saknas</span><strong>portalmanifest 500-800 ord</strong></div>
+            <div class="signal-line"><span>Saknas</span><strong>tre ingångskort</strong></div>
+            <div class="signal-line"><span>Saknas</span><strong>öppet/stängt-text</strong></div>
+            <div class="signal-line"><span>Risk</span><strong>mystikbroschyr</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><strong>Yarpie</strong><a href="index.html">Till startsidan</a></div></footer>
+    <script src="assets/js/site.js"></script>
+  </body>
 </html>

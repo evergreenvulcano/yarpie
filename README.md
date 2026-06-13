@@ -1,44 +1,53 @@
-# Yarpie static prototype
+# Yarpie
 
-Detta repo innehåller en dependency-light statisk prototyp för Yarpie, det offentliga webbfönstret för **Det Djupsamiska Näringslivet**.
+Static website prototype for `yarpie.verboten.se`.
 
-> Status: prototyp / internt arbetsmaterial. Ej slutlig offentlig copy.
+Yarpie is the public-facing portal for Det Djupsamiska Näringslivet: a controlled web window, not a full archive and not the exposed LOMPOLO-CORE engine.
 
-## Lokal förhandsvisning
+## Structure
 
-Du kan öppna `index.html` direkt i webbläsare, eller starta en enkel statisk server från repo-roten:
+- `index.html` — portal start page.
+- `yarpie.html` — Yarpie / Orrengonjo Jarpie.
+- `det-djupsamiska-naringslivet.html` — public system explanation.
+- `storbastutinget.html` — governance and decisions under heat.
+- `framtidsplaner-2040.html` — succession and long-term preparation.
+- `radio.html` — Ruinradio and signal window.
+- `besoksfonster.html` — controlled contact / visit path.
+- `fjarde-generationen.html` — Mermaid-rendered succession map.
+- Additional stub rooms: radioskugga, korna, kosmiska kvadraten, scrolls, riskmotorn, world-events, ordlista.
+- `assets/css/styles.css` — site styling.
+- `assets/js/site.js` — small progressive enhancements.
+- `assets/images/` — local visual assets.
+
+## Local Preview
+
+Open `index.html` directly in a browser, or serve the folder with:
 
 ```bash
-python -m http.server 8000
+python -m http.server 8141 --bind 127.0.0.1
 ```
 
-Öppna sedan `http://localhost:8000/index.html`.
+Then open:
 
-## Struktur
+```text
+http://127.0.0.1:8141/
+```
 
-- `index.html`
-- `yarpie.html`
-- `det-djupsamiska-naringslivet.html`
-- `storbastutinget.html`
-- `framtidsplaner-2040.html`
-- `radio.html`
-- `besoksfonster.html`
-- `fjarde-generationen.html` (Mermaid-diagram via CDN)
-- Stubb-sidor: `fraga-under-varme.html`, `radioskuggan.html`, `korna.html`, `kosmiska-kvadraten.html`, `scrolls.html`, `riskmotorn.html`, `world-events.html`, `ordlista.html`
-- `assets/css/styles.css`
-- `assets/js/site.js`
-- `assets/images/portal-hero.svg`
+## Content Safety
 
-## Innehållssäkerhet och publiceringsregler
+This is a prototype, not final public copy.
 
-- Publicera endast verifierat material; allt annat är under värme.
-- Yarpie är ett kontrollerat portalfönster, inte ett fullständigt arkiv.
-- LOMPOLO-CORE ska inte exponeras som fullt webbinnehåll.
-- Publicera inte känslig genealogi, persondata eller påståenden om verkliga samiska institutioner.
-- Ingen extern analytics eller backend används i prototypen.
+- Do not expose LOMPOLO-CORE as the public website.
+- Do not publish sensitive genealogy or real personal data.
+- Do not treat Mermaid succession nodes as verified people.
+- Do not treat Strålsamen, Spräck, or Flempo as the entire portal voice.
+- Do not make KSA/Korna into ordinary corporate governance.
 
-## GitHub Pages
+## External Notes
 
-Denna struktur fungerar för GitHub Pages från default branch root.
+The prototype links to:
 
-Repositoryt är tänkt att ligga under `https://verbotenmedia.se/yarpie/`. Länkarna är relativa så att sajten fungerar både i repo-roten lokalt och under `/yarpie/` vid publicering.
+- https://VMNODEN.SE/
+- https://JAMDA.APP/
+- https://acarta.app/
+

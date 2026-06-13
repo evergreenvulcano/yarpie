@@ -1,50 +1,59 @@
 <!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Storbastutinget · Yarpie</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html">Yarpie<small>Det Djupsamiska Näringslivet</small></a>
-      <ul class="nav-list" aria-label="Huvudnavigation">
-          <li><a href="yarpie.html" data-page="yarpie.html">Yarpie</a></li>
-          <li><a href="det-djupsamiska-naringslivet.html" data-page="det-djupsamiska-naringslivet.html">Näringslivet</a></li>
-          <li><a href="storbastutinget.html" data-page="storbastutinget.html">Storbastutinget</a></li>
-          <li><a href="framtidsplaner-2040.html" data-page="framtidsplaner-2040.html">2040</a></li>
-          <li><a href="radio.html" data-page="radio.html">Radio</a></li>
-          <li><a href="besoksfonster.html" data-page="besoksfonster.html">Besök</a></li>
-        </ul>
-    </div>
-  </header>
-  <div class="simple-hero">
-    <div class="container">
-      <p class="eyebrow">Intern prototyp · ej extern cirkulation</p>
-      <h1>Storbastutinget</h1>
-    </div>
-  </div>
-  <main id="main-content">
-    <div class="container">
-      
-<section>
-  <p>Storbastutinget presenteras som systemlager för prioritering, ordning och ansvarig remisshantering.</p>
-  <div class="status-row">
-    <span class="status">verifierad</span>
-    <span class="status">under värme</span>
-  </div>
-</section>
-
-    </div>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      Yarpie prototyp · <span data-year></span> · Materialet är fiktion/internt arbetsunderlag.
-    </div>
-  </footer>
-  <script src="assets/js/site.js" defer></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Storbastutinget | Yarpie</title>
+    <meta name="description" content="Storbastutinget som beslutsvärme, rådslag och protokollform." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehåll</a>
+    <header class="site-header is-scrolled" data-header>
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span><strong>Yarpie</strong><small>under värme</small></span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Meny</button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="yarpie.html">Yarpie</a>
+        <a href="det-djupsamiska-naringslivet.html">Näringslivet</a>
+        <a href="storbastutinget.html" aria-current="page">Storbastutinget</a>
+        <a href="framtidsplaner-2040.html">2040</a>
+        <a href="radio.html">Radio</a>
+        <a href="besoksfonster.html">Besök</a>
+      </nav>
+    </header>
+    <main id="main" class="subpage">
+      <section class="page-hero">
+        <p class="eyebrow">Beslutsvärmen</p>
+        <h1>Storbastutinget är där frågan får temperatur innan den får beslut.</h1>
+        <p>
+          Här ska webbens besökare möta governance som värme, rådslag, friktion och status, inte som färdig policy.
+        </p>
+        <span class="status-pill">under värme</span>
+      </section>
+      <figure class="visual-band">
+        <img src="assets/images/kosmiska-kvadraten-governance-bastu-v0.png" alt="Kosmiska Kvadraten som bastunära governanceform i mörkt trä, sten och vinterljus." />
+        <figcaption>Kosmiska Kvadraten som beslutsform: värme, gräns och fyra fält under prövning.</figcaption>
+      </figure>
+      <section class="section">
+        <div class="section-inner ting-layout">
+          <div>
+            <p class="eyebrow">Fråga under beredning</p>
+            <h2>Ska Strålsamen vara publik röst eller kommenterad riskmotor?</h2>
+            <p>
+              Exemplet är ett protokollfragment, inte canon. Det visar hur sidan kan bära öppna frågor utan att
+              publicera råmaterial eller låta riskrösten bli hela portalen.
+            </p>
+          </div>
+          <div class="signal-panel">
+            <div class="signal-line"><span>Status</span><strong>beslutsväntande</strong></div>
+            <div class="signal-line"><span>Tolkning</span><strong>behövs</strong></div>
+            <div class="signal-line"><span>Content</span><strong>3 statusar saknas</strong></div>
+            <div class="signal-line"><span>Risk</span><strong>rollspelsråd</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><strong>Yarpie</strong><a href="index.html">Till startsidan</a></div></footer>
+    <script src="assets/js/site.js"></script>
+  </body>
 </html>
