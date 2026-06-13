@@ -45,6 +45,8 @@ The Storbastuting chronology is an index and backbone, not publishable source co
 - Add recurring layout patterns for approved public formats.
 - Improve 404 and closed-edge copy when a blocked state needs to be visible.
 - Keep module documentation current when scope changes.
+- Audit repo surfaces for product-level improvement potential.
+- Mark possible future text needs without automatically creating content orders.
 
 ## Stop Rules
 
@@ -54,6 +56,40 @@ The Storbastuting chronology is an index and backbone, not publishable source co
 - Do not treat the Storbastuting-krönikan as public source copy.
 - Do not write free lore to fill missing editorial output.
 - Do not replace editorial judgment with repo convenience.
+- Do not treat a content order as publication.
+- Do not create a content order directly from an audit without human confirmation or concrete build proof.
+
+## Content Product Audits
+
+Webbsamen may scan the repo for product-level improvement potential. A content audit may identify:
+
+- manifest stiffness,
+- thin sections,
+- missing passage,
+- unclear navigation,
+- weak retention,
+- dead status surfaces,
+- pages that may need future editorial body.
+
+The audit marks potential need only. It does not create publication, does not write missing content, and does not automatically open a request to `kontent_skribent`.
+
+## Content Orders
+
+Repo order path:
+
+```text
+modules/webbsamen/orders/
+```
+
+Drive execution path:
+
+```text
+LOMPOLO-CORE/_redaktionell_contentlogik/03_artifacts/kontent_skribent/
+```
+
+Webbsamen may order krönikerande brödtext, eventkort, signalnotis, mottagarkort, protokollkant, 404-copy, mikrocopy, övergångstext, läsnästa-copy, or human-review-fråga. Krönikörsamen is a role inside `kontent_skribent`, not a new repo module.
+
+A content order may be opened only after human confirmation or after a concrete Webbsamen build task proves that text is required for the product surface to function.
 
 ## Current Web Map
 
@@ -73,9 +109,9 @@ Storbastuting anchor: `_infrastruktur/STORBASTUTING_KRONIKAN.md` is now read as 
 
 | Run | Source status | Webbsamen decision | Repo consequence |
 | --- | --- | --- | --- |
-| A | `official_candidate_not_published` in `press_release/regional_initiatives` | Show as eventable public status after ting, not release. | Status row on `webbsamen.html`. |
+| A | `official_candidate_not_published` in `press_release/regional_initiatives` | Show as eventable public status after ting, not release. | `kallvattenradet.html`, status row on `webbsamen.html`. |
 | B | `blocked_protected_source` / `needs_human_provenance_decision` | Show the stop as avståendets etik without source detail. | Stop edge on `webbsamen.html` and 404 discipline. |
-| C | `official_candidate_not_published` in `veckans_same` | Prepare talskuld/talordning format after light human review. | Format card, run row, and `veckans-same.html`. |
+| C | `official_candidate_not_published` in `veckans_same` | Prepare talskuld/talordning format after light human review. | Running format on `veckans-same.html`, order for next issue. |
 | H | `official_candidate_not_published` in `kontent_kronikor` | Install Yarpie-window logic: public breadth against closed depths. | Active Webbsamen status surface on `webbsamen.html`. |
 | J | `hold_internal` | Keep as internal hold; only the edge is visible. | Closed-edge status on `webbsamen.html`. |
 

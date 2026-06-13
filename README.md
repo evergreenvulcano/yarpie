@@ -11,6 +11,7 @@ The repo is not the editorial machine and not the protected source layer. It is 
 - `yarpie.html` - Yarpie / Orrengonjo Jarpie.
 - `det-djupsamiska-naringslivet.html` - public system explanation.
 - `storbastutinget.html` - Storbastuting as storyworld heart, chronology, talordning, and public web edge.
+- `kallvattenradet.html` - RUN A regional event surface for Kallvattenrådet / Kevne Kaiser.
 - `framtidsplaner-2040.html` - succession and long-term preparation.
 - `radio.html` - Ruinradio and signal window.
 - `besoksfonster.html` - controlled contact / visit path.
@@ -19,6 +20,7 @@ The repo is not the editorial machine and not the protected source layer. It is 
 - Additional stub rooms: radioskugga, korna, kosmiska kvadraten, scrolls, riskmotorn, world-events, ordlista.
 - `assets/` contains shared styling, scripts, and local images.
 - `modules/webbsamen/` defines the first Webbsamen repo module: how Codex may turn approved outcomes into reviewable web patches without exposing the editorial core.
+- `modules/webbsamen/orders/` stores repo-specific content orders; Drive remains the writing surface.
 
 ## Working Principle
 
@@ -27,6 +29,8 @@ Webbsamen works through Codex. Changes should stay small enough to review, shoul
 The repo can add or revise public routes when Storbastuting chronology and product gate leave a buildable consequence. It should not invent missing editorial material to make a page feel finished.
 
 Each new Webbsamen surface should be able to point back to a ting, decision, stop, yrkande, andeförskjutning, or slussed value. The web builds handtag, not the core itself.
+
+Webbsamen may audit the repo for content product-level improvement potential. A content audit may identify manifest stiffness, thin sections, missing passage, unclear navigation, weak retention, dead status surfaces, or pages that may need future editorial body. An audit must not create content orders automatically. It may only mark potential need; a request to `kontent_skribent` can be opened later after human confirmation or after a concrete Webbsamen build task proves that text is required.
 
 ## Local Preview
 
