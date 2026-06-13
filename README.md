@@ -6,7 +6,7 @@ Detta repo innehåller en dependency-light statisk prototyp för Yarpie, det off
 
 ## Lokal förhandsvisning
 
-Du kan öppna `/home/runner/work/yarpie/yarpie/evergreenvulcano/yarpie/index.html` direkt i webbläsare, eller starta en enkel statisk server från repo-roten:
+Du kan öppna `index.html` direkt i webbläsare, eller starta en enkel statisk server från repo-roten:
 
 ```bash
 python -m http.server 8000
@@ -41,4 +41,4 @@ python -m http.server 8000
 
 Denna struktur fungerar för GitHub Pages från default branch root.
 
-Repositoryt är tänkt att ligga under `https://verbotenmedia.se/yarpie/`, därför används root-relativa länkar med `/yarpie/`-prefix.
+Repositoryt är tänkt att ligga under `https://verbotenmedia.se/yarpie/`. Länkarna är relativa så att sajten fungerar både i repo-roten lokalt och under `/yarpie/` vid publicering.
