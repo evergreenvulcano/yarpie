@@ -11,6 +11,7 @@ The repo is not the editorial machine and not the protected source layer. It is 
 - `yarpie.html` - Yarpie / Orrengonjo Jarpie.
 - `det-djupsamiska-naringslivet.html` - public system explanation.
 - `storbastutinget.html` - Storbastuting as storyworld heart, chronology, talordning, and public web edge.
+- `kallvattenradet.html` - RUN A regional event surface for Kallvattenrådet / Kevne Kaiser.
 - `framtidsplaner-2040.html` - succession and long-term preparation.
 - `radio.html` - Ruinradio and signal window.
 - `besoksfonster.html` - controlled contact / visit path.
@@ -19,6 +20,7 @@ The repo is not the editorial machine and not the protected source layer. It is 
 - Additional stub rooms: radioskugga, korna, kosmiska kvadraten, scrolls, riskmotorn, world-events, ordlista.
 - `assets/` contains shared styling, scripts, and local images.
 - `modules/webbsamen/` defines the first Webbsamen repo module: how Codex may turn approved outcomes into reviewable web patches without exposing the editorial core.
+- `modules/webbsamen/orders/` stores repo-specific content orders; Drive remains the writing surface.
 
 ## Working Principle
 

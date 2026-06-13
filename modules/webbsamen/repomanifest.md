@@ -45,6 +45,7 @@ The Storbastuting chronology is an index and backbone, not publishable source co
 - Add recurring layout patterns for approved public formats.
 - Improve 404 and closed-edge copy when a blocked state needs to be visible.
 - Keep module documentation current when scope changes.
+- Create repo-specific content orders when a page is buildable but text-poor; do not write free content to hide the gap.
 
 ## Stop Rules
 
@@ -54,6 +55,23 @@ The Storbastuting chronology is an index and backbone, not publishable source co
 - Do not treat the Storbastuting-krönikan as public source copy.
 - Do not write free lore to fill missing editorial output.
 - Do not replace editorial judgment with repo convenience.
+- Do not treat a content order as publication.
+
+## Content Orders
+
+Repo order path:
+
+```text
+modules/webbsamen/orders/
+```
+
+Drive execution path:
+
+```text
+LOMPOLO-CORE/_redaktionell_contentlogik/03_artifacts/kontent_skribent/
+```
+
+Webbsamen may order krönikerande brödtext, eventkort, signalnotis, mottagarkort, protokollkant, 404-copy, mikrocopy, övergångstext, läsnästa-copy, or human-review-fråga. Krönikörsamen is a role inside `kontent_skribent`, not a new repo module.
 
 ## Current Web Map
 
@@ -73,9 +91,9 @@ Storbastuting anchor: `_infrastruktur/STORBASTUTING_KRONIKAN.md` is now read as 
 
 | Run | Source status | Webbsamen decision | Repo consequence |
 | --- | --- | --- | --- |
-| A | `official_candidate_not_published` in `press_release/regional_initiatives` | Show as eventable public status after ting, not release. | Status row on `webbsamen.html`. |
+| A | `official_candidate_not_published` in `press_release/regional_initiatives` | Show as eventable public status after ting, not release. | `kallvattenradet.html`, status row on `webbsamen.html`. |
 | B | `blocked_protected_source` / `needs_human_provenance_decision` | Show the stop as avståendets etik without source detail. | Stop edge on `webbsamen.html` and 404 discipline. |
-| C | `official_candidate_not_published` in `veckans_same` | Prepare talskuld/talordning format after light human review. | Format card, run row, and `veckans-same.html`. |
+| C | `official_candidate_not_published` in `veckans_same` | Prepare talskuld/talordning format after light human review. | Running format on `veckans-same.html`, order for next issue. |
 | H | `official_candidate_not_published` in `kontent_kronikor` | Install Yarpie-window logic: public breadth against closed depths. | Active Webbsamen status surface on `webbsamen.html`. |
 | J | `hold_internal` | Keep as internal hold; only the edge is visible. | Closed-edge status on `webbsamen.html`. |
 

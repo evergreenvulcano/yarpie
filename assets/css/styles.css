@@ -610,6 +610,97 @@ h1 {
   color: rgba(243, 239, 229, 0.7);
 }
 
+.same-cycle,
+.latest-ting-grid,
+.event-timeline,
+.event-rules,
+.order-grid {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.same-cycle {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.latest-ting-grid {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr) minmax(0, 0.9fr);
+}
+
+.event-timeline,
+.event-rules {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.order-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.same-cycle article,
+.latest-ting-grid article,
+.event-timeline article,
+.event-rules article,
+.order-grid article {
+  min-height: 210px;
+  display: grid;
+  align-content: space-between;
+  gap: 18px;
+  padding: 24px;
+  background: #fffaf0;
+}
+
+.latest-ting-grid article:first-child {
+  background:
+    linear-gradient(180deg, rgba(23, 50, 38, 0.1), rgba(255, 250, 240, 0.98)),
+    #fffaf0;
+}
+
+.same-cycle span,
+.latest-ting-grid span,
+.event-timeline span,
+.event-rules span,
+.order-grid span {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--copper);
+  font-weight: 850;
+}
+
+.same-cycle h3,
+.latest-ting-grid h3,
+.event-timeline h3,
+.event-rules h3,
+.order-grid h3 {
+  margin: 0;
+  font-size: clamp(1.16rem, 2vw, 1.5rem);
+  line-height: 1.12;
+}
+
+.same-cycle p,
+.latest-ting-grid p,
+.event-timeline p,
+.event-rules p,
+.order-grid p {
+  margin: 0;
+  color: rgba(16, 21, 19, 0.72);
+}
+
+.latest-ting-grid a,
+.order-grid a {
+  color: var(--pine);
+  font-weight: 850;
+}
+
+.event-hero {
+  background:
+    linear-gradient(120deg, rgba(16, 21, 19, 0.96), rgba(27, 53, 80, 0.82)),
+    var(--pine);
+}
+
 .room-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1144,6 +1235,11 @@ h1 {
   .webbsamen-card-grid,
   .recipient-grid,
   .same-principles,
+  .same-cycle,
+  .latest-ting-grid,
+  .event-timeline,
+  .event-rules,
+  .order-grid,
   .run-row,
   .room-grid,
   .stub-grid,
