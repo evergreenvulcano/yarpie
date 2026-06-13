@@ -372,6 +372,10 @@ h1 {
   color: rgba(243, 239, 229, 0.78);
 }
 
+.paper .intro-grid p:last-child {
+  color: rgba(16, 21, 19, 0.74);
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -653,6 +657,173 @@ h1 {
   color: var(--ember);
 }
 
+.archive-body {
+  background: #eee7d8;
+}
+
+.archive-hero {
+  padding: 132px clamp(18px, 5vw, 72px) 72px;
+  background:
+    linear-gradient(120deg, rgba(13, 21, 18, 0.94), rgba(23, 50, 38, 0.82)),
+    url("../images/kosmiska-kvadraten-succession-arkiv-v0.png") center / cover;
+  color: var(--paper);
+}
+
+.archive-hero-grid,
+.archive-map {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: clamp(28px, 6vw, 80px);
+  align-items: end;
+}
+
+.archive-hero h1 {
+  font-size: clamp(3.4rem, 8vw, 8.2rem);
+}
+
+.archive-stamp {
+  border: 1px solid rgba(243, 239, 229, 0.34);
+  background: rgba(10, 14, 14, 0.48);
+  padding: 20px;
+  backdrop-filter: blur(14px);
+}
+
+.archive-stamp span,
+.archive-stamp small,
+.draft-file summary span,
+.draft-file summary em {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.72;
+}
+
+.archive-stamp strong {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  line-height: 1;
+}
+
+.archive-stamp small {
+  margin-top: 10px;
+}
+
+.archive-orientation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.archive-orientation li {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.archive-orientation strong {
+  color: var(--pine);
+}
+
+.archive-orientation span {
+  color: rgba(16, 21, 19, 0.72);
+}
+
+.archive-section {
+  overflow: hidden;
+}
+
+.archive-copy,
+.draft-stack {
+  max-width: 1060px;
+}
+
+.source-note {
+  max-width: 780px;
+  margin: 20px 0 0;
+  color: rgba(16, 21, 19, 0.72);
+  font-size: 1rem;
+}
+
+.source-note code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+}
+
+.archive-heading {
+  max-width: 880px;
+  margin-bottom: 34px;
+}
+
+.chronicle-block,
+.draft-file pre {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: clamp(0.82rem, 1.08vw, 0.96rem);
+  line-height: 1.62;
+}
+
+.chronicle-block {
+  margin-top: 26px;
+  padding: clamp(18px, 3vw, 34px);
+  border-left: 4px solid var(--copper);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.draft-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.draft-file {
+  border: 1px solid var(--line);
+  background: rgba(243, 239, 229, 0.82);
+}
+
+.deep .draft-file {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(243, 239, 229, 0.22);
+}
+
+.draft-file summary {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: minmax(0, 0.22fr) minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+}
+
+.draft-file summary strong {
+  font-size: clamp(0.95rem, 1.5vw, 1.12rem);
+  overflow-wrap: anywhere;
+}
+
+.draft-file summary em {
+  font-style: normal;
+  text-align: right;
+}
+
+.draft-file pre {
+  padding: 20px;
+  border-top: 1px solid var(--line);
+  background: rgba(11, 15, 13, 0.92);
+  color: #f8f1e6;
+}
+
+.deep .draft-file pre {
+  border-top-color: rgba(243, 239, 229, 0.22);
+}
+
 .site-footer {
   background: #0b0f0d;
   color: var(--paper);
@@ -724,8 +895,22 @@ h1 {
   .format-grid,
   .decision-grid,
   .room-grid,
-  .stub-grid {
+  .stub-grid,
+  .archive-hero-grid,
+  .archive-map {
     grid-template-columns: 1fr;
+  }
+
+  .archive-hero-grid {
+    align-items: start;
+  }
+
+  .draft-file summary {
+    grid-template-columns: 1fr;
+  }
+
+  .draft-file summary em {
+    text-align: left;
   }
 }
 
@@ -759,6 +944,20 @@ h1 {
 
   .button {
     width: 100%;
+  }
+
+  .archive-hero {
+    padding-top: 112px;
+  }
+
+  .archive-orientation li {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .chronicle-block,
+  .draft-file pre {
+    font-size: 0.78rem;
   }
 
   .section,
