@@ -2,10 +2,11 @@ const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const links = Array.from(document.querySelectorAll(".site-nav a"));
+const isSubpage = Boolean(document.querySelector("main.subpage"));
 
 const setHeaderState = () => {
   if (!header) return;
-  header.classList.toggle("is-scrolled", window.scrollY > 24);
+  header.classList.toggle("is-scrolled", isSubpage || window.scrollY > 24);
 };
 
 setHeaderState();
