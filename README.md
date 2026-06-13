@@ -1,6 +1,6 @@
 # Yarpie
 
-Static website prototype for `yarpie.verboten.se`.
+Static website prototype for `yarpie.verbotenmedia.se`.
 
 Yarpie is the public-facing portal for Det Djupsamiska Näringslivet: a controlled web window, not a full archive and not the exposed LOMPOLO-CORE engine.
 
@@ -33,6 +33,18 @@ Then open:
 ```text
 http://127.0.0.1:8141/
 ```
+
+## GitHub Pages
+
+This repo is prepared for static GitHub Pages publishing from `main` and `/ (root)`.
+
+Custom domain:
+
+```text
+yarpie.verbotenmedia.se
+```
+
+See [PAGES_SETUP.md](PAGES_SETUP.md) for the exact GitHub Pages and Cloudflare settings.
 
 ## Content Safety
 
