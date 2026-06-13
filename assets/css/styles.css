@@ -400,6 +400,12 @@ h1 {
     var(--ink);
 }
 
+.same-hero {
+  background:
+    linear-gradient(120deg, rgba(27, 53, 80, 0.95), rgba(23, 50, 38, 0.86)),
+    var(--blue);
+}
+
 .system-map article {
   min-height: 190px;
   padding: 24px;
@@ -530,6 +536,78 @@ h1 {
 .edge-panel,
 .repo-panel {
   color: var(--ink);
+}
+
+.recipient-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.recipient-card {
+  min-height: 260px;
+  display: grid;
+  align-content: space-between;
+  gap: 18px;
+  padding: 22px;
+  background: #fffaf0;
+}
+
+.recipient-card span,
+.same-principles span {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--copper);
+  font-weight: 850;
+}
+
+.recipient-card h3,
+.same-principles h3 {
+  margin: 0;
+  font-size: 1.24rem;
+}
+
+.recipient-card p,
+.same-principles p {
+  margin: 0;
+  color: rgba(16, 21, 19, 0.7);
+}
+
+.recipient-card strong {
+  color: var(--pine);
+}
+
+.same-status-panel {
+  color: var(--ink);
+}
+
+.same-principles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--white-line);
+  background: var(--white-line);
+}
+
+.same-principles article {
+  min-height: 210px;
+  display: grid;
+  align-content: space-between;
+  gap: 18px;
+  padding: 24px;
+  background: #151d1a;
+}
+
+.same-principles h3 {
+  color: var(--paper);
+}
+
+.same-principles p {
+  color: rgba(243, 239, 229, 0.7);
 }
 
 .room-grid {
@@ -1064,6 +1142,8 @@ h1 {
   .decision-grid,
   .webbsamen-chain,
   .webbsamen-card-grid,
+  .recipient-grid,
+  .same-principles,
   .run-row,
   .room-grid,
   .stub-grid,

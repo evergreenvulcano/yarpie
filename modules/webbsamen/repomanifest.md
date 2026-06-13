@@ -1,7 +1,7 @@
 # Webbsamen Repomanifest
 
-Status: pilot module  
-Active public surface: `webbsamen.html`  
+Status: pilot module
+Active public surface: `webbsamen.html`
 Repo mode: static HTML, CSS, assets, reviewable patches
 Last executed: 2026-06-13 against Drive passage patch and `_redaktionell_contentlogik/_register/STATUS_LEDGER_v0.md`
 
@@ -51,6 +51,25 @@ Source layer: Drive filesystem, `_redaktionell_contentlogik`.
 | J | `hold_internal` | Keep as internal hold; only the edge is visible. | Closed-edge status on `webbsamen.html`. |
 
 No candidate draft text is published by this run. The web page shows status, format, and boundary only.
+
+## Specialpass: Veckans Same 2026-06-13
+
+Source layer: Drive filesystem, `04_product/veckans_same`.
+
+Decision: build a focused Veckans Same page with previous recipients as value additions, while preserving the source status `official_candidate_not_published`.
+
+Repo consequences:
+
+- `veckans-same.html`
+- `protocols/2026-06-13_veckans_same_specialpass.md`
+- `registers/veckans_same_recipients_v0.md`
+
+Rules:
+
+- Recipients are not ranked.
+- Talskuld numbers remain internal.
+- Consent-bound and missing/not-declared-dead cases remain visibly bounded.
+- Deceased figures omitted by source rule remain omitted.
 
 ## Patch Flow
 

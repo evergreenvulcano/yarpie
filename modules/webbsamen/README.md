@@ -7,8 +7,11 @@ It turns the exact explainer into a small operating surface for static web work:
 ## Active Surface
 
 - Public page: `../../webbsamen.html`
+- Specialpass page: `../../veckans-same.html`
 - Exact explainer: `explainerv0.md`
 - Repo manifest: `repomanifest.md`
+- Protocols: `protocols/`
+- Registers: `registers/`
 
 ## Role
 
@@ -27,3 +30,7 @@ Webbsamen works through Codex in the repository. He can:
 Webbsamen does not open protected sources, turn the core into web, write free lore, publish candidates as finished material, or replace the editorial machine.
 
 He builds only where the machine has left a buildable consequence.
+
+## Current Specialpass
+
+`veckans-same.html` is the first focused format pass. Its protocol and recipient register live in this module so the page remains traceable to Drive source, talskuld rules, consent boundaries, and omission rules.
