@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Portalvy över vintermörk dalgång med institutionsbyggnad i bakgrunden">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#223742"/>
+      <stop offset="55%" stop-color="#17262f"/>
+      <stop offset="100%" stop-color="#101a1f"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#182422"/>
+      <stop offset="100%" stop-color="#0f1a19"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 600 L260 520 L470 580 L660 490 L870 560 L1110 500 L1360 570 L1600 530 L1600 900 L0 900 Z" fill="url(#ground)"/>
+  <path d="M660 320 L930 320 L970 430 L620 430 Z" fill="#1f3550" opacity="0.75"/>
+  <rect x="700" y="345" width="18" height="65" fill="#c17a4f" opacity="0.7"/>
+  <rect x="745" y="345" width="18" height="65" fill="#c17a4f" opacity="0.6"/>
+  <rect x="790" y="345" width="18" height="65" fill="#c17a4f" opacity="0.65"/>
+  <rect x="835" y="345" width="18" height="65" fill="#c17a4f" opacity="0.52"/>
+</svg>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fjärde generationen · Yarpie</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Yarpie<small>Det Djupsamiska Näringslivet</small></a>
+      <ul class="nav-list" aria-label="Huvudnavigation">
+          <li><a href="yarpie.html" data-page="yarpie.html">Yarpie</a></li>
+          <li><a href="det-djupsamiska-naringslivet.html" data-page="det-djupsamiska-naringslivet.html">Näringslivet</a></li>
+          <li><a href="storbastutinget.html" data-page="storbastutinget.html">Storbastutinget</a></li>
+          <li><a href="framtidsplaner-2040.html" data-page="framtidsplaner-2040.html">2040</a></li>
+          <li><a href="radio.html" data-page="radio.html">Radio</a></li>
+          <li><a href="besoksfonster.html" data-page="besoksfonster.html">Besök</a></li>
+        </ul>
+    </div>
+  </header>
+  <div class="simple-hero">
+    <div class="container">
+      <p class="eyebrow">TECH_READY / CONTENT_FIRST / under värme</p>
+      <h1>Fjärde generationen</h1>
+      <p>Fjärde generationen är inte ett persongalleri utan en bärighetsfråga.</p>
+      <div class="status-row" aria-label="statusetiketter">
+        <span class="status">verifierad</span>
+        <span class="status">funktionsmärkt</span>
+        <span class="status">under värme</span>
+        <span class="status">ej för extern cirkulation</span>
+        <span class="status">autogenereringsrisk</span>
+        <span class="status">requires_governance_review</span>
+      </div>
+    </div>
+  </div>
+  <main id="main-content">
+    <div class="container">
+      <section>
+        <h2>Successionsdiagram</h2>
+        <p>Textbaserat arbetsdiagram för succession, roll, status, osäkerhet och systemskikt.</p>
+        <div class="mermaid-wrap" role="img" aria-label="Successionsdiagram">
+<pre class="mermaid">
+flowchart TB
+    S0[Succession: generation 1-3] --> S1[Succession: generation 4]
+    S1 --> R1[Roll: bärande funktioner]
+    R1 --> ST1[Status: verifierad/funktionsmärkt]
+    R1 --> U1[Osäkerhet: under värme]
+    U1 --> AR1[Autogenereringsrisk]
+    ST1 --> GOV[requires_governance_review]
+
+    subgraph LAGER[Systemlager]
+      KSA[KSA]
+      KOR[Korna]
+      STB[Storbastutinget]
+    end
+
+    S1 --> KSA
+    KSA --> KOR
+    KOR --> STB
+    STB --> GOV
+</pre>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      Yarpie prototyp · <span data-year></span> · Materialet är fiktion/internt arbetsunderlag.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.mermaid) {
+        mermaid.initialize({ startOnLoad: true, securityLevel: 'loose', theme: 'base' });
+      }
+    });
+  </script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
