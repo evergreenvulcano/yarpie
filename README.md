@@ -10,7 +10,7 @@ The repo is not the editorial machine and not the protected source layer. It is 
 - `index.html` - portal start page.
 - `yarpie.html` - Yarpie / Orrengonjo Jarpie.
 - `det-djupsamiska-naringslivet.html` - public system explanation.
-- `storbastutinget.html` - governance and decisions under heat.
+- `storbastutinget.html` - Storbastuting as storyworld heart, chronology, talordning, and public web edge.
 - `framtidsplaner-2040.html` - succession and long-term preparation.
 - `radio.html` - Ruinradio and signal window.
 - `besoksfonster.html` - controlled contact / visit path.
@@ -24,7 +24,9 @@ The repo is not the editorial machine and not the protected source layer. It is 
 
 Webbsamen works through Codex. Changes should stay small enough to review, should preserve source boundaries, and should show blocked or held material as web discipline rather than as leaked content.
 
-The repo can add or revise public routes when product gate leaves a buildable consequence. It should not invent missing editorial material to make a page feel finished.
+The repo can add or revise public routes when Storbastuting chronology and product gate leave a buildable consequence. It should not invent missing editorial material to make a page feel finished.
+
+Each new Webbsamen surface should be able to point back to a ting, decision, stop, yrkande, andeförskjutning, or slussed value. The web builds handtag, not the core itself.
 
 ## Local Preview
 

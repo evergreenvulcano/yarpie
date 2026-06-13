@@ -5,6 +5,12 @@ Status: `repo_patch_executed`
 Surface: `veckans-same.html`
 Source family: `veckans_same`
 
+## Storbastuting Anchor
+
+After the Storbastuting anchor pass, this page is read as a talordning/talskuld echo from ting logic, not as generic light content.
+
+`veckans_same` carries the principle that low or long-unheard does not mean low value. The public page may show value additions, but not ranking, popularity, or exposed talskuld numbers.
+
 ## Source Read
 
 Drive source:
@@ -35,7 +41,7 @@ Therefore this pass may build a reviewable web surface and registry, but must no
 Build `veckans-same.html` as:
 
 - a public-format candidate page,
-- a talskuld-bound archive surface,
+- a talskuld/talordning-bound archive surface,
 - a value-addition grid for previous recipients,
 - a visible discipline statement against ranking, popularity, exposed talskuld numbers, and grave conversion.
 
