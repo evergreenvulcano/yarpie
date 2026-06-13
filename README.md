@@ -1,24 +1,30 @@
 # Yarpie
 
-Static website prototype for `yarpie.verbotenmedia.se`.
+Yarpie is a static web repository for `yarpie.verbotenmedia.se`.
 
-Yarpie is the public-facing portal for Det Djupsamiska Näringslivet: a controlled web window, not a full archive and not the exposed LOMPOLO-CORE engine.
+The repo is not the editorial machine and not the protected source layer. It is the public web body where approved or bounded outcomes can become pages, status blocks, navigation, 404 language, and other reviewable web surfaces.
 
-## Structure
+## Repo Modules
 
-- `index.html` — portal start page.
-- `yarpie.html` — Yarpie / Orrengonjo Jarpie.
-- `det-djupsamiska-naringslivet.html` — public system explanation.
-- `storbastutinget.html` — governance and decisions under heat.
-- `framtidsplaner-2040.html` — succession and long-term preparation.
-- `radio.html` — Ruinradio and signal window.
-- `besoksfonster.html` — controlled contact / visit path.
-- `fjarde-generationen.html` — Mermaid-rendered succession map.
-- `sameklyvning-2026.html` — fulltext archive page for krönikav0, `_varldsvav`, and `_varldshiss_codex`.
+- Root HTML pages form the current public portal surface.
+- `index.html` - portal start page.
+- `yarpie.html` - Yarpie / Orrengonjo Jarpie.
+- `det-djupsamiska-naringslivet.html` - public system explanation.
+- `storbastutinget.html` - governance and decisions under heat.
+- `framtidsplaner-2040.html` - succession and long-term preparation.
+- `radio.html` - Ruinradio and signal window.
+- `besoksfonster.html` - controlled contact / visit path.
+- `fjarde-generationen.html` - Mermaid-rendered succession map.
+- `sameklyvning-2026.html` - fulltext archive page for krönikav0, `_varldsvav`, and `_varldshiss_codex`.
 - Additional stub rooms: radioskugga, korna, kosmiska kvadraten, scrolls, riskmotorn, world-events, ordlista.
-- `assets/css/styles.css` — site styling.
-- `assets/js/site.js` — small progressive enhancements.
-- `assets/images/` — local visual assets.
+- `assets/` contains shared styling, scripts, and local images.
+- `modules/webbsamen/` defines the first Webbsamen repo module: how Codex may turn approved outcomes into reviewable web patches without exposing the editorial core.
+
+## Working Principle
+
+Webbsamen works through Codex. Changes should stay small enough to review, should preserve source boundaries, and should show blocked or held material as web discipline rather than as leaked content.
+
+The repo can add or revise public routes when product gate leaves a buildable consequence. It should not invent missing editorial material to make a page feel finished.
 
 ## Local Preview
 
@@ -44,17 +50,18 @@ Custom domain:
 yarpie.verbotenmedia.se
 ```
 
-See [PAGES_SETUP.md](PAGES_SETUP.md) for the exact GitHub Pages and Cloudflare settings.
+See [PAGES_SETUP.md](PAGES_SETUP.md) for the GitHub Pages and Cloudflare settings.
 
-## Content Safety
-
-This is a prototype, not final public copy.
+## Boundaries
 
 - Do not expose LOMPOLO-CORE as the public website.
-- Do not publish sensitive genealogy or real personal data.
+- Do not publish protected sources, sensitive genealogy, or real personal data.
 - Do not treat Mermaid succession nodes as verified people.
 - Do not treat Strålsamen, Spräck, or Flempo as the entire portal voice.
 - Do not make KSA/Korna into ordinary corporate governance.
+- Do not treat a product candidate as public release.
+- Do not turn internal holds or blocked sources into ordinary content.
+- Do not let repo convenience replace editorial judgment.
 
 ## External Notes
 
