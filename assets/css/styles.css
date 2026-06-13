@@ -659,6 +659,7 @@ h1 {
 
 .archive-body {
   background: #eee7d8;
+  overflow-x: clip;
 }
 
 .archive-hero {
@@ -672,6 +673,7 @@ h1 {
 .archive-hero-grid,
 .archive-map {
   width: min(1180px, 100%);
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
@@ -679,8 +681,45 @@ h1 {
   align-items: end;
 }
 
+.archive-body main,
+.archive-body section,
+.archive-body .section-inner,
+.archive-hero-grid,
+.archive-map,
+.archive-copy,
+.draft-stack,
+.draft-file,
+.chronicle-block,
+.draft-file pre {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.archive-hero-grid > *,
+.archive-map > *,
+.archive-orientation li > *,
+.draft-file summary > * {
+  min-width: 0;
+}
+
 .archive-hero h1 {
   font-size: clamp(3.4rem, 8vw, 8.2rem);
+}
+
+.archive-hero h1,
+.archive-heading h2,
+.archive-map h2,
+.archive-orientation strong,
+.archive-orientation span,
+.draft-file summary strong,
+.draft-file summary span,
+.draft-file summary em,
+.source-note,
+.source-note code {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .archive-stamp {
@@ -741,6 +780,7 @@ h1 {
 
 .archive-copy,
 .draft-stack {
+  width: min(1060px, 100%);
   max-width: 1060px;
 }
 
@@ -764,12 +804,20 @@ h1 {
 .chronicle-block,
 .draft-file pre {
   margin: 0;
+  width: 100%;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
-  word-break: normal;
+  word-break: break-word;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: clamp(0.82rem, 1.08vw, 0.96rem);
   line-height: 1.62;
+}
+
+.chronicle-block code,
+.draft-file pre code {
+  white-space: inherit;
+  overflow-wrap: inherit;
+  word-break: inherit;
 }
 
 .chronicle-block {
@@ -801,6 +849,7 @@ h1 {
   gap: 14px;
   align-items: center;
   padding: 16px 18px;
+  min-width: 0;
 }
 
 .draft-file summary strong {
