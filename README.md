@@ -10,6 +10,7 @@ The repo is not the editorial machine and not the protected source layer. It is 
 - `index.html` - portal start page.
 - `yarpie.html` - Yarpie / Orrengonjo Jarpie.
 - `det-djupsamiska-naringslivet.html` - public system explanation.
+- `sapmi-empire-intelligence.html` - English Lompolo-cybernetic front facade for the Sapmi Empire.
 - `storbastutinget.html` - Storbastuting as storyworld heart, chronology, talordning, and public web edge.
 - `kallvattenradet.html` - RUN A regional event surface for Kallvattenrådet / Kevne Kaiser.
 - `framtidsplaner-2040.html` - succession and long-term preparation.
@@ -65,6 +66,7 @@ See [PAGES_SETUP.md](PAGES_SETUP.md) for the GitHub Pages and Cloudflare setting
 - Do not treat Mermaid succession nodes as verified people.
 - Do not treat Strålsamen, Spräck, or Flempo as the entire portal voice.
 - Do not make KSA/Korna into ordinary corporate governance.
+- Do not import draft facade terms literally when they conflict with project specifics; normalize through Webbsamen before publication.
 - Do not treat a product candidate as public release.
 - Do not turn internal holds or blocked sources into ordinary content.
 - Do not let repo convenience replace editorial judgment.

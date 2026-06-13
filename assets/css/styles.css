@@ -847,6 +847,171 @@ h1 {
     var(--pine);
 }
 
+.intelligence-hero {
+  background:
+    radial-gradient(circle at 76% 24%, rgba(46, 232, 242, 0.24), transparent 30vw),
+    radial-gradient(circle at 16% 78%, rgba(226, 126, 82, 0.18), transparent 26vw),
+    linear-gradient(120deg, rgba(3, 9, 14, 0.99), rgba(6, 28, 40, 0.94)),
+    var(--void);
+}
+
+.intelligence-page .eyebrow {
+  color: var(--cyan);
+}
+
+.intelligence-ledger,
+.intelligence-grid,
+.intelligence-timeline {
+  display: grid;
+  gap: 8px;
+}
+
+.intelligence-ledger {
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  align-items: stretch;
+}
+
+.intelligence-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.intelligence-timeline {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.intelligence-primer,
+.intelligence-console,
+.intelligence-grid article,
+.intelligence-timeline article {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
+  border: 1px solid rgba(46, 232, 242, 0.28);
+  background:
+    linear-gradient(rgba(7, 16, 24, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 16, 24, 0.045) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 250, 240, 0.96), rgba(231, 234, 223, 0.9)),
+    #fffaf0;
+  background-size:
+    32px 32px,
+    32px 32px,
+    auto,
+    auto;
+  box-shadow:
+    0 22px 44px rgba(7, 16, 24, 0.1),
+    var(--glow-cyan);
+}
+
+.intelligence-primer,
+.intelligence-grid article,
+.intelligence-timeline article {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  padding: clamp(22px, 3vw, 34px);
+}
+
+.intelligence-console {
+  display: grid;
+  align-content: stretch;
+  background:
+    linear-gradient(rgba(46, 232, 242, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 232, 242, 0.07) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(10, 35, 48, 0.98), rgba(7, 16, 24, 0.98)),
+    var(--void);
+  background-size:
+    34px 34px,
+    34px 34px,
+    auto,
+    auto;
+}
+
+.intelligence-primer::before,
+.intelligence-console::before,
+.intelligence-grid article::before,
+.intelligence-timeline article::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  pointer-events: none;
+  border-top: 1px solid rgba(46, 232, 242, 0.32);
+  border-left: 1px solid rgba(226, 126, 82, 0.24);
+}
+
+.intelligence-primer::after,
+.intelligence-grid article::after,
+.intelligence-timeline article::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 34px;
+  height: 34px;
+  pointer-events: none;
+  border: 1px solid rgba(46, 232, 242, 0.3);
+  transform: rotate(45deg);
+}
+
+.intelligence-primer span,
+.intelligence-console span,
+.intelligence-grid span,
+.intelligence-timeline span {
+  display: block;
+  color: var(--copper);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.intelligence-primer h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  line-height: 0.96;
+}
+
+.intelligence-primer p,
+.intelligence-grid p,
+.intelligence-timeline p {
+  margin: 0;
+  color: rgba(16, 21, 19, 0.72);
+}
+
+.intelligence-grid h3,
+.intelligence-timeline h3 {
+  margin: 0;
+  font-size: clamp(1.22rem, 2vw, 1.6rem);
+  line-height: 1.12;
+}
+
+.intelligence-console div {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 8px;
+  padding: 20px 22px;
+  border-bottom: 1px solid rgba(243, 239, 229, 0.16);
+}
+
+.intelligence-console div:last-child {
+  border-bottom: 0;
+}
+
+.intelligence-console strong {
+  color: var(--paper);
+  font-size: clamp(1rem, 1.8vw, 1.28rem);
+  line-height: 1.16;
+}
+
+.intelligence-dark-panel {
+  background:
+    linear-gradient(rgba(46, 232, 242, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 232, 242, 0.06) 1px, transparent 1px),
+    rgba(7, 16, 24, 0.92);
+  background-size: 36px 36px;
+  color: var(--paper);
+}
+
 .room-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1855,7 +2020,10 @@ body:has(.subpage) .site-header {
   .ting-layout,
   .partners-layout,
   .same-profile-callout,
-  .same-profile-layout {
+  .same-profile-layout,
+  .intelligence-ledger,
+  .intelligence-grid,
+  .intelligence-timeline {
     grid-template-columns: 1fr;
   }
 
