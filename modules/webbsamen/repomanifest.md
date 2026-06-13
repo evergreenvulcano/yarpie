@@ -45,7 +45,8 @@ The Storbastuting chronology is an index and backbone, not publishable source co
 - Add recurring layout patterns for approved public formats.
 - Improve 404 and closed-edge copy when a blocked state needs to be visible.
 - Keep module documentation current when scope changes.
-- Create repo-specific content orders when a page is buildable but text-poor; do not write free content to hide the gap.
+- Audit repo surfaces for product-level improvement potential.
+- Mark possible future text needs without automatically creating content orders.
 
 ## Stop Rules
 
@@ -56,6 +57,21 @@ The Storbastuting chronology is an index and backbone, not publishable source co
 - Do not write free lore to fill missing editorial output.
 - Do not replace editorial judgment with repo convenience.
 - Do not treat a content order as publication.
+- Do not create a content order directly from an audit without human confirmation or concrete build proof.
+
+## Content Product Audits
+
+Webbsamen may scan the repo for product-level improvement potential. A content audit may identify:
+
+- manifest stiffness,
+- thin sections,
+- missing passage,
+- unclear navigation,
+- weak retention,
+- dead status surfaces,
+- pages that may need future editorial body.
+
+The audit marks potential need only. It does not create publication, does not write missing content, and does not automatically open a request to `kontent_skribent`.
 
 ## Content Orders
 
@@ -72,6 +88,8 @@ LOMPOLO-CORE/_redaktionell_contentlogik/03_artifacts/kontent_skribent/
 ```
 
 Webbsamen may order krönikerande brödtext, eventkort, signalnotis, mottagarkort, protokollkant, 404-copy, mikrocopy, övergångstext, läsnästa-copy, or human-review-fråga. Krönikörsamen is a role inside `kontent_skribent`, not a new repo module.
+
+A content order may be opened only after human confirmation or after a concrete Webbsamen build task proves that text is required for the product surface to function.
 
 ## Current Web Map
 

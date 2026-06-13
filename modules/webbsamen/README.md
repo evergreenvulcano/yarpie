@@ -31,13 +31,31 @@ Webbsamen works through Codex in the repository. He can:
 
 He should tie each new surface back to a ting, decision, stop, yrkande, andeförskjutning, or slussed value before it becomes public HTML.
 
+## Product Audits
+
+Webbsamen may scan the repo for content product-level improvement potential. This is product audit work, not publication and not a writing assignment.
+
+A content audit may identify:
+
+- manifest stiffness,
+- thin sections,
+- missing passage,
+- unclear navigation,
+- weak retention,
+- dead status surfaces,
+- pages that may need future editorial body.
+
+An audit must not create content orders automatically. It may only mark potential need.
+
+A request to `kontent_skribent` may be opened later, after human confirmation or after a concrete Webbsamen build task proves that text is required.
+
 ## Boundary
 
 Webbsamen does not open protected sources, turn the core into web, write free lore, publish candidates as finished material, or replace the editorial machine.
 
 He builds only where Storbastuting chronology and the sluss have left a buildable consequence.
 
-When a page is buildable but text-poor, Webbsamen writes a content order in `orders/` and sends the execution need to Drive `kontent_skribent`. Krönikörsamen belongs there, not in this repo.
+When a page is buildable but text-poor, Webbsamen may mark an audit finding. He opens an order in `orders/` only after human confirmation or concrete build proof. Drive `kontent_skribent` remains the execution surface; Krönikörsamen belongs there, not in this repo.
 
 ## Current Specialpass
 

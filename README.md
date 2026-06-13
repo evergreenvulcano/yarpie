@@ -30,6 +30,8 @@ The repo can add or revise public routes when Storbastuting chronology and produ
 
 Each new Webbsamen surface should be able to point back to a ting, decision, stop, yrkande, andeförskjutning, or slussed value. The web builds handtag, not the core itself.
 
+Webbsamen may audit the repo for content product-level improvement potential. A content audit may identify manifest stiffness, thin sections, missing passage, unclear navigation, weak retention, dead status surfaces, or pages that may need future editorial body. An audit must not create content orders automatically. It may only mark potential need; a request to `kontent_skribent` can be opened later after human confirmation or after a concrete Webbsamen build task proves that text is required.
+
 ## Local Preview
 
 Open `index.html` directly in a browser, or serve the folder with:
