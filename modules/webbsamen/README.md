@@ -49,6 +49,22 @@ An audit must not create content orders automatically. It may only mark potentia
 
 A request to `kontent_skribent` may be opened later, after human confirmation or after a concrete Webbsamen build task proves that text is required.
 
+### Discovery Utility
+
+Run the repo-local discovery scan from the repo root:
+
+```bash
+python modules/webbsamen/webbsamen_discovery.py
+```
+
+Machine-readable output:
+
+```bash
+python modules/webbsamen/webbsamen_discovery.py --format json
+```
+
+The scan only reports review signals for the public web surface. It may mark `content_need`, but that means "possible order signal", not "write the missing text now". It does not publish pages, open content orders, extract protected material, or rewrite the public voice.
+
 ## Boundary
 
 Webbsamen does not open protected sources, turn the core into web, write free lore, publish candidates as finished material, or replace the editorial machine.
